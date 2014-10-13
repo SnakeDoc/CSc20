@@ -163,12 +163,19 @@ public class Lab02 {
         
     private int getFebruaryLength() {
         
-		int leapYear = year % 4 == 
-			0 ? 1 : year % 100 == 
-				0 ? 0 : year % 400 == 
-					0 ? 1 : 0;
-	  
-		return (leapYear == 0) ? 29 : 28;
+		if ((year % 4 == 0) && year % 100 != 0) {
+		
+			return 29;
+			
+		} else if ((year % 4 == 0) && (year % 100 == 0) && (year % 400 == 0)) {
+		
+			return 29;
+			
+		} else {
+		
+			return 28;
+			
+		}
         
     }
 

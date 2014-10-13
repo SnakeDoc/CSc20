@@ -1,0 +1,520 @@
+Script started on Wed 30 Oct 2013 04:27:40 PM PDT
+Note: $DISPLAY is set to localhost:12.0 for X windows.
+
+    *** Notice: This is an ECS IT resource, intended to be used for purposes
+        related to the educational activities of faculty, staff and students
+        of California State University Sacramento. Any other use is a
+        violation of University and College policy.
+
+
+[?1034h[sipulaj@athena lab07]> ls
+infix.class	      MyStackQueue/   Queue.java       TooManyLeft.class
+Infix.class	      Node.class      Stack.class      TooManyOperand.class
+Infix.java	      Node.java       Stack.java       TooManyOperator.class
+Infix.javaOLD	      Operand.class   Token.class      TooManyRight.class
+InstrTokenizer.class  Operator.class  Tokenizer.class  typescript
+lab07/		      Queue.class     Tokenizer.java
+[sipulaj@athena lab07]> ^C
+[sipulaj@athena lab07]> 
+[sipulaj@athena lab07]> cat typescript 
+[sipulaj@athena lab07]> cat typescript 
+[sipulaj@athena lab07]> script
+Script started, file is typescript
+Note: $DISPLAY is set to localhost:12.0 for X windows.
+
+    *** Notice: This is an ECS IT resource, intended to be used for purposes
+        related to the educational activities of faculty, staff and students
+        of California State University Sacramento. Any other use is a
+        violation of University and College policy.
+
+
+[?1034h[sipulaj@athena lab07]> ls
+infix.class	      MyStackQueue/   Queue.java       TooManyLeft.class
+Infix.class	      Node.class      Stack.class      TooManyOperand.class
+Infix.java	      Node.java       Stack.java       TooManyOperator.class
+Infix.javaOLD	      Operand.class   Token.class      TooManyRight.class
+InstrTokenizer.class  Operator.class  Tokenizer.class  typescript
+lab07/		      Queue.class     Tokenizer.java
+[sipulaj@athena lab07]> cat typescript 
+[sipulaj@athena lab07]> exit[K[K[K[K^C
+[sipulaj@athena lab07]> 
+[sipulaj@athena lab07]> 
+[sipulaj@athena lab07]> 
+[sipulaj@athena lab07]> 
+[sipulaj@athena lab07]> 
+[sipulaj@athena lab07]> 
+[sipulaj@athena lab07]> cat typescript 
+[sipulaj@athena lab07]> 
+[sipulaj@athena lab07]> 
+[sipulaj@athena lab07]> 
+[sipulaj@athena lab07]> 
+[sipulaj@athena lab07]> script
+Script started, file is typescript
+Note: $DISPLAY is set to localhost:12.0 for X windows.
+
+    *** Notice: This is an ECS IT resource, intended to be used for purposes
+        related to the educational activities of faculty, staff and students
+        of California State University Sacramento. Any other use is a
+        violation of University and College policy.
+
+
+[?1034h[sipulaj@athena lab07]> jdb -attach 20002
+Set uncaught java.lang.Throwable
+Set deferred uncaught java.lang.Throwable
+Initializing jdb ...
+
+VM Started: > No frames on the current call stack
+
+main[1] stop at infixToPostFix
+Usage: stop at <class>:<line_number> or
+       stop in <class>.<method_name>[(argument_type,...)]
+main[1] stop a in Infix.infixToPostFix
+Deferring breakpoint Infix.infixToPostFix.
+It will be set after the class is loaded.
+main[1] step
+> Unable to set deferred breakpoint Infix.infixToPostFix : No method infixToPostFix in Infix
+
+Stopping due to deferred breakpoint errors.
+No frames on the current call stack
+
+main[1] run
+> 
+Step completed: "thread=main", Infix.main(), line=118 bci=0
+118    			System.out.print("Enter infix: ");
+
+main[1] step
+> 
+Step completed: "thread=main", Infix.main(), line=119 bci=8
+119    			System.out.flush();
+
+main[1] step
+> 
+Step completed: "thread=main", Infix.main(), line=120 bci=14
+120    			InputStreamReader isr = new InputStreamReader(System.in);
+
+main[1] step
+> 
+Step completed: "thread=main", Infix.main(), line=121 bci=25
+121    			BufferedReader br = new BufferedReader(isr);
+
+main[1] step
+> 
+Step completed: "thread=main", Infix.main(), line=122 bci=34
+122    			String s = br.readLine();
+
+main[1] step
+> 
+Step completed: "thread=main", Infix.main(), line=123 bci=40
+123    			if ( s.equals("") ) break;
+
+main[1] step
+> 
+Step completed: "thread=main", Infix.main(), line=125 bci=53
+125    				Post = infixToPostfix(s);
+
+main[1] step
+> 
+Step completed: "thread=main", Infix.infixToPostfix(), line=16 bci=0
+16            Tokenizer tokenizer = new Tokenizer(s);
+
+main[1] step
+> 
+Step completed: "thread=main", Tokenizer.<init>(), line=11 bci=0
+11    	Tokenizer(String infixExpression) { 
+
+main[1] step
+> 
+Step completed: "thread=main", Tokenizer.<init>(), line=12 bci=4
+12    		buf = infixExpression.toCharArray(); 
+
+main[1] step
+> 
+Step completed: "thread=main", Tokenizer.<init>(), line=13 bci=12
+13    		cur = 0; 
+
+main[1] step
+> 
+Step completed: "thread=main", Tokenizer.<init>(), line=14 bci=17
+14    	} 
+
+main[1] step
+> 
+Step completed: "thread=main", Infix.infixToPostfix(), line=16 bci=8
+16            Tokenizer tokenizer = new Tokenizer(s);
+
+main[1] step
+> 
+Step completed: "thread=main", Infix.infixToPostfix(), line=17 bci=9
+17            Queue queue = new Queue();
+
+main[1] step
+> 
+Step completed: "thread=main", Queue.<init>(), line=8 bci=0
+8    public class Queue {
+
+main[1] step
+> 
+Step completed: "thread=main", Queue.<init>(), line=10 bci=4
+10    	private int front = 0;
+
+main[1] step
+> 
+Step completed: "thread=main", Queue.<init>(), line=11 bci=9
+11    	private int rear = -1;
+
+main[1] step
+> 
+Step completed: "thread=main", Queue.<init>(), line=12 bci=14
+12    	private int capacity = 1024;
+
+main[1] step
+> 
+Step completed: "thread=main", Queue.<init>(), line=14 bci=21
+14    	private Object S[] = new Object[capacity];
+
+main[1] step
+> 
+Step completed: "thread=main", Infix.infixToPostfix(), line=17 bci=16
+17            Queue queue = new Queue();
+
+main[1] step
+> 
+Step completed: "thread=main", Infix.infixToPostfix(), line=18 bci=17
+18            Stack stack = new Stack();
+
+main[1] step
+> 
+Step completed: "thread=main", Stack.<init>(), line=8 bci=0
+8    public class Stack {
+
+main[1] step
+> 
+Step completed: "thread=main", Stack.<init>(), line=10 bci=4
+10    	private Node Top = null;
+
+main[1] step
+> 
+Step completed: "thread=main", Stack.<init>(), line=11 bci=9
+11    	private int size = 0;
+
+main[1] ru  continue
+Unrecognized command: 'continue'.  Try help...
+main[1] help
+** command list **
+connectors                -- list available connectors and transports in this VM
+
+run [class [args]]        -- start execution of application's main class
+
+threads [threadgroup]     -- list threads
+thread <thread id>        -- set default thread
+suspend [thread id(s)]    -- suspend threads (default: all)
+resume [thread id(s)]     -- resume threads (default: all)
+where [<thread id> | all] -- dump a thread's stack
+wherei [<thread id> | all]-- dump a thread's stack, with pc info
+up [n frames]             -- move up a thread's stack
+down [n frames]           -- move down a thread's stack
+kill <thread id> <expr>   -- kill a thread with the given exception object
+interrupt <thread id>     -- interrupt a thread
+
+print <expr>              -- print value of expression
+dump <expr>               -- print all object information
+eval <expr>               -- evaluate expression (same as print)
+set <lvalue> = <expr>     -- assign new value to field/variable/array element
+locals                    -- print all local variables in current stack frame
+
+classes                   -- list currently known classes
+class <class id>          -- show details of named class
+methods <class id>        -- list a class's methods
+fields <class id>         -- list a class's fields
+
+threadgroups              -- list threadgroups
+threadgroup <name>        -- set current threadgroup
+
+stop in <class id>.<method>[(argument_type,...)]
+                          -- set a breakpoint in a method
+stop at <class id>:<line> -- set a breakpoint at a line
+clear <class id>.<method>[(argument_type,...)]
+                          -- clear a breakpoint in a method
+clear <class id>:<line>   -- clear a breakpoint at a line
+clear                     -- list breakpoints
+catch [uncaught|caught|all] <class id>|<class pattern>
+                          -- break when specified exception occurs
+ignore [uncaught|caught|all] <class id>|<class pattern>
+                          -- cancel 'catch' for the specified exception
+watch [access|all] <class id>.<field name>
+                          -- watch access/modifications to a field
+unwatch [access|all] <class id>.<field name>
+                          -- discontinue watching access/modifications to a field
+trace [go] methods [thread]
+                          -- trace method entries and exits.
+                          -- All threads are suspended unless 'go' is specified
+trace [go] method exit | exits [thread]
+                          -- trace the current method's exit, or all methods' exits
+                          -- All threads are suspended unless 'go' is specified
+untrace [methods]         -- stop tracing method entrys and/or exits
+step                      -- execute current line
+step up                   -- execute until the current method returns to its caller
+stepi                     -- execute current instruction
+next                      -- step one line (step OVER calls)
+cont                      -- continue execution from breakpoint
+
+list [line number|method] -- print source code
+use (or sourcepath) [source file path]
+                          -- display or change the source path
+exclude [<class pattern>, ... | "none"]
+                          -- do not report step or method events for specified classes
+classpath                 -- print classpath info from target VM
+
+monitor <command>         -- execute command each time the program stops
+monitor                   -- list monitors
+unmonitor <monitor#>      -- delete a monitor
+read <filename>           -- read and execute a command file
+
+lock <expr>               -- print lock info for an object
+threadlocks [thread id]   -- print lock info for a thread
+
+pop                       -- pop the stack through and including the current frame
+reenter                   -- same as pop, but current frame is reentered
+redefine <class id> <class file name>
+                          -- redefine the code for a class
+
+disablegc <expr>          -- prevent garbage collection of an object
+enablegc <expr>           -- permit garbage collection of an object
+
+!!                        -- repeat last command
+<n> <command>             -- repeat command n times
+# <command>               -- discard (no-op)
+help (or ?)               -- list commands
+version                   -- print version information
+exit (or quit)            -- exit debugger
+
+<class id>: a full class name with package qualifiers
+<class pattern>: a class name with a leading or trailing wildcard ('*')
+<thread id>: thread number as reported in the 'threads' command
+<expr>: a Java(TM) Programming Language expression.
+Most common syntax is supported.
+
+Startup commands can be placed in either "jdb.ini" or ".jdbrc"
+in user.home or user.dir
+main[1] run
+> exit
+[sipulaj@athena lab07]> e[K^C
+[sipulaj@athena lab07]> ^C
+[sipulaj@athena lab07]> cat typescript 
+[sipulaj@athena lab07]> ^C
+[sipulaj@athena lab07]> ^C
+[sipulaj@athena lab07]> ^C
+[sipulaj@athena lab07]> ^C
+[sipulaj@athena lab07]> ^C
+[sipulaj@athena lab07]> ls
+infix.class	      MyStackQueue/   Queue.java       TooManyLeft.class
+Infix.class	      Node.class      Stack.class      TooManyOperand.class
+Infix.java	      Node.java       Stack.java       TooManyOperator.class
+Infix.javaOLD	      Operand.class   Token.class      TooManyRight.class
+InstrTokenizer.class  Operator.class  Tokenizer.class  typescript
+lab07/		      Queue.class     Tokenizer.java
+[sipulaj@athena lab07]> du -hac
+4.0K	./infix.class
+4.0K	./Operator.class
+4.0K	./Infix.class
+4.0K	./TooManyOperand.class
+4.0K	./Infix.javaOLD
+0	./typescript
+4.0K	./Node.java
+0	./.nfs00000000024e0c6e000002fa
+4.0K	./TooManyLeft.class
+4.0K	./Stack.java
+4.0K	./Node.class
+4.0K	./MyStackQueue/1Stack.java
+4.0K	./MyStackQueue/Queue.java
+4.0K	./MyStackQueue/InstrQueue.class
+4.0K	./MyStackQueue/Stack.class
+20K	./MyStackQueue
+4.0K	./lab07/infix.class
+4.0K	./lab07/Operator.class
+4.0K	./lab07/TooManyOperand.class
+4.0K	./lab07/TooManyLeft.class
+4.0K	./lab07/MyStackQueue/Queue.class
+4.0K	./lab07/MyStackQueue/Stack.class
+12K	./lab07/MyStackQueue
+4.0K	./lab07/TooManyRight.class
+4.0K	./lab07/infix2.class
+4.0K	./lab07/Operand.class
+4.0K	./lab07/TooManyOperator.class
+4.0K	./lab07/Token.class
+4.0K	./lab07/Tokenizer.class
+56K	./lab07
+4.0K	./Queue.class
+4.0K	./Tokenizer.java
+0	./.accessed
+4.0K	./TooManyRight.class
+4.0K	./Operand.class
+4.0K	./Infix.java
+4.0K	./TooManyOperator.class
+4.0K	./Queue.java
+4.0K	./Token.class
+4.0K	./Tokenizer.class
+4.0K	./Stack.class
+4.0K	./InstrTokenizer.class
+160K	.
+160K	total
+[sipulaj@athena lab07]> script scriptfile
+Script started, file is scriptfile
+Note: $DISPLAY is set to localhost:12.0 for X windows.
+
+    *** Notice: This is an ECS IT resource, intended to be used for purposes
+        related to the educational activities of faculty, staff and students
+        of California State University Sacramento. Any other use is a
+        violation of University and College policy.
+
+
+[?1034h[sipulaj@athena lab07]> ls
+infix.class	      MyStackQueue/   Queue.java       Tokenizer.java
+Infix.class	      Node.class      scriptfile       TooManyLeft.class
+Infix.java	      Node.java       Stack.class      TooManyOperand.class
+Infix.javaOLD	      Operand.class   Stack.java       TooManyOperator.class
+InstrTokenizer.class  Operator.class  Token.class      TooManyRight.class
+lab07/		      Queue.class     Tokenizer.class  typescript
+[sipulaj@athena lab07]> du -jha[K[K[Khac
+4.0K	./infix.class
+4.0K	./Operator.class
+4.0K	./Infix.class
+4.0K	./TooManyOperand.class
+4.0K	./Infix.javaOLD
+0	./typescript
+4.0K	./Node.java
+0	./.nfs00000000024e0c6e000002fa
+4.0K	./TooManyLeft.class
+4.0K	./Stack.java
+4.0K	./Node.class
+0	./scriptfile
+4.0K	./MyStackQueue/1Stack.java
+4.0K	./MyStackQueue/Queue.java
+4.0K	./MyStackQueue/InstrQueue.class
+4.0K	./MyStackQueue/Stack.class
+20K	./MyStackQueue
+4.0K	./lab07/infix.class
+4.0K	./lab07/Operator.class
+4.0K	./lab07/TooManyOperand.class
+4.0K	./lab07/TooManyLeft.class
+4.0K	./lab07/MyStackQueue/Queue.class
+4.0K	./lab07/MyStackQueue/Stack.class
+12K	./lab07/MyStackQueue
+4.0K	./lab07/TooManyRight.class
+4.0K	./lab07/infix2.class
+4.0K	./lab07/Operand.class
+4.0K	./lab07/TooManyOperator.class
+4.0K	./lab07/Token.class
+4.0K	./lab07/Tokenizer.class
+56K	./lab07
+4.0K	./Queue.class
+4.0K	./Tokenizer.java
+0	./.accessed
+4.0K	./TooManyRight.class
+4.0K	./Operand.class
+4.0K	./Infix.java
+4.0K	./TooManyOperator.class
+4.0K	./Queue.java
+4.0K	./Token.class
+4.0K	./Tokenizer.class
+4.0K	./Stack.class
+4.0K	./InstrTokenizer.class
+160K	.
+160K	total
+[sipulaj@athena lab07]> cat
+lksjdf
+lksjdf
+lkjsdlkfsd
+lkjsdlkfsd
+^C
+[sipulaj@athena lab07]> ^C
+[sipulaj@athena lab07]> l[Kdu -hac
+4.0K	./infix.class
+4.0K	./Operator.class
+4.0K	./Infix.class
+4.0K	./TooManyOperand.class
+4.0K	./Infix.javaOLD
+0	./typescript
+4.0K	./Node.java
+0	./.nfs00000000024e0c6e000002fa
+4.0K	./TooManyLeft.class
+4.0K	./Stack.java
+4.0K	./Node.class
+0	./scriptfile
+4.0K	./MyStackQueue/1Stack.java
+4.0K	./MyStackQueue/Queue.java
+4.0K	./MyStackQueue/InstrQueue.class
+4.0K	./MyStackQueue/Stack.class
+20K	./MyStackQueue
+4.0K	./lab07/infix.class
+4.0K	./lab07/Operator.class
+4.0K	./lab07/TooManyOperand.class
+4.0K	./lab07/TooManyLeft.class
+4.0K	./lab07/MyStackQueue/Queue.class
+4.0K	./lab07/MyStackQueue/Stack.class
+12K	./lab07/MyStackQueue
+4.0K	./lab07/TooManyRight.class
+4.0K	./lab07/infix2.class
+4.0K	./lab07/Operand.class
+4.0K	./lab07/TooManyOperator.class
+4.0K	./lab07/Token.class
+4.0K	./lab07/Tokenizer.class
+56K	./lab07
+4.0K	./Queue.class
+4.0K	./Tokenizer.java
+0	./.accessed
+4.0K	./TooManyRight.class
+4.0K	./Operand.class
+4.0K	./Infix.java
+4.0K	./TooManyOperator.class
+4.0K	./Queue.java
+4.0K	./Token.class
+4.0K	./Tokenizer.class
+4.0K	./Stack.class
+4.0K	./InstrTokenizer.class
+160K	.
+160K	total
+[sipulaj@athena lab07]> exit
+Script done, file is scriptfile
+[sipulaj@athena lab07]> ls
+infix.class	      MyStackQueue/   Queue.java       Tokenizer.java
+Infix.class	      Node.class      scriptfile       TooManyLeft.class
+Infix.java	      Node.java       Stack.class      TooManyOperand.class
+Infix.javaOLD	      Operand.class   Stack.java       TooManyOperator.class
+InstrTokenizer.class  Operator.class  Token.class      TooManyRight.class
+lab07/		      Queue.class     Tokenizer.class  typescript
+[sipulaj@athena lab07]> vi scriptfile 
+[?1049h[?1h=[1;24r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[24;1H"scriptfile" 118L, 3362C[1;1HScript started on Wed 30 Oct 2013 04:32:42 PM PDT
+Note: $DISPLAY is set to localhost:12.0 for X windows.[34m^M
+^M[m
+    *** Notice: This is an ECS IT resource, intended to be used for purposes[34m^M[m[5;8H related to the educational activities of faculty, staff and students[34m^M[m[6;8H of California State University Sacramento. Any other use is a[34m^M[m[7;8H violation of University and College policy.[34m^M
+^M
+^M
+^[[m[?1034h[sipulaj@athena lab07]> ls[34m^M[m
+infix.class[10C MyStackQueue/   Queue.java       Tokenizer.java[34m^M[m
+Infix.class[10C Node.class      scriptfile       TooManyLeft.class[34m^M[m
+Infix.java[11C Node.java       Stack.class      TooManyOperand.class[34m^M[m
+Infix.javaOLD[8C Operand.class   Stack.java       TooManyOperator.class[34m^M[m
+InstrTokenizer.class  Operator.class  Token.class      TooManyRight.class[34m^M[m
+lab07/[15C Queue.class     Tokenizer.class  typescript[34m^M[m
+[sipulaj@athena lab07]> du -jha[34m^H^[[m[K[34m^H^[[m[K[34m^H^[[m[Khac[34m^M[m
+4.0K    ./infix.class[34m^M[m
+4.0K    ./Operator.class[34m^M[m
+4.0K    ./Infix.class[34m^M[m
+4.0K    ./TooManyOperand.class[34m^M[m
+4.0K    ./Infix.javaOLD[34m^M[m
+0       ./typescript[34m^M[1;1H[?12l[?25h[?25l[m[24;1H[K[24;1H:[?12l[?25hq[?25l[24;1H[K[24;1H[?1l>[?12l[?25h[?1049l[sipulaj@athena lab07]> 
+[sipulaj@athena lab07]> 
+[sipulaj@athena lab07]> 
+[sipulaj@athena lab07]> 
+[sipulaj@athena lab07]> 
+[sipulaj@athena lab07]> 
+[sipulaj@athena lab07]> 
+[sipulaj@athena lab07]> 
+[sipulaj@athena lab07]> exit
+Script done, file is typescript
+[sipulaj@athena lab07]> exit
+Script done, file is typescript
+[sipulaj@athena lab07]> exit
+
+Script done on Wed 30 Oct 2013 04:35:19 PM PDT

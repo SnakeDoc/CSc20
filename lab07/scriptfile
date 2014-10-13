@@ -1,0 +1,118 @@
+Script started on Wed 30 Oct 2013 04:32:42 PM PDT
+Note: $DISPLAY is set to localhost:12.0 for X windows.
+
+    *** Notice: This is an ECS IT resource, intended to be used for purposes
+        related to the educational activities of faculty, staff and students
+        of California State University Sacramento. Any other use is a
+        violation of University and College policy.
+
+
+[?1034h[sipulaj@athena lab07]> ls
+infix.class	      MyStackQueue/   Queue.java       Tokenizer.java
+Infix.class	      Node.class      scriptfile       TooManyLeft.class
+Infix.java	      Node.java       Stack.class      TooManyOperand.class
+Infix.javaOLD	      Operand.class   Stack.java       TooManyOperator.class
+InstrTokenizer.class  Operator.class  Token.class      TooManyRight.class
+lab07/		      Queue.class     Tokenizer.class  typescript
+[sipulaj@athena lab07]> du -jha[K[K[Khac
+4.0K	./infix.class
+4.0K	./Operator.class
+4.0K	./Infix.class
+4.0K	./TooManyOperand.class
+4.0K	./Infix.javaOLD
+0	./typescript
+4.0K	./Node.java
+0	./.nfs00000000024e0c6e000002fa
+4.0K	./TooManyLeft.class
+4.0K	./Stack.java
+4.0K	./Node.class
+0	./scriptfile
+4.0K	./MyStackQueue/1Stack.java
+4.0K	./MyStackQueue/Queue.java
+4.0K	./MyStackQueue/InstrQueue.class
+4.0K	./MyStackQueue/Stack.class
+20K	./MyStackQueue
+4.0K	./lab07/infix.class
+4.0K	./lab07/Operator.class
+4.0K	./lab07/TooManyOperand.class
+4.0K	./lab07/TooManyLeft.class
+4.0K	./lab07/MyStackQueue/Queue.class
+4.0K	./lab07/MyStackQueue/Stack.class
+12K	./lab07/MyStackQueue
+4.0K	./lab07/TooManyRight.class
+4.0K	./lab07/infix2.class
+4.0K	./lab07/Operand.class
+4.0K	./lab07/TooManyOperator.class
+4.0K	./lab07/Token.class
+4.0K	./lab07/Tokenizer.class
+56K	./lab07
+4.0K	./Queue.class
+4.0K	./Tokenizer.java
+0	./.accessed
+4.0K	./TooManyRight.class
+4.0K	./Operand.class
+4.0K	./Infix.java
+4.0K	./TooManyOperator.class
+4.0K	./Queue.java
+4.0K	./Token.class
+4.0K	./Tokenizer.class
+4.0K	./Stack.class
+4.0K	./InstrTokenizer.class
+160K	.
+160K	total
+[sipulaj@athena lab07]> cat
+lksjdf
+lksjdf
+lkjsdlkfsd
+lkjsdlkfsd
+^C
+[sipulaj@athena lab07]> ^C
+[sipulaj@athena lab07]> l[Kdu -hac
+4.0K	./infix.class
+4.0K	./Operator.class
+4.0K	./Infix.class
+4.0K	./TooManyOperand.class
+4.0K	./Infix.javaOLD
+0	./typescript
+4.0K	./Node.java
+0	./.nfs00000000024e0c6e000002fa
+4.0K	./TooManyLeft.class
+4.0K	./Stack.java
+4.0K	./Node.class
+0	./scriptfile
+4.0K	./MyStackQueue/1Stack.java
+4.0K	./MyStackQueue/Queue.java
+4.0K	./MyStackQueue/InstrQueue.class
+4.0K	./MyStackQueue/Stack.class
+20K	./MyStackQueue
+4.0K	./lab07/infix.class
+4.0K	./lab07/Operator.class
+4.0K	./lab07/TooManyOperand.class
+4.0K	./lab07/TooManyLeft.class
+4.0K	./lab07/MyStackQueue/Queue.class
+4.0K	./lab07/MyStackQueue/Stack.class
+12K	./lab07/MyStackQueue
+4.0K	./lab07/TooManyRight.class
+4.0K	./lab07/infix2.class
+4.0K	./lab07/Operand.class
+4.0K	./lab07/TooManyOperator.class
+4.0K	./lab07/Token.class
+4.0K	./lab07/Tokenizer.class
+56K	./lab07
+4.0K	./Queue.class
+4.0K	./Tokenizer.java
+0	./.accessed
+4.0K	./TooManyRight.class
+4.0K	./Operand.class
+4.0K	./Infix.java
+4.0K	./TooManyOperator.class
+4.0K	./Queue.java
+4.0K	./Token.class
+4.0K	./Tokenizer.class
+4.0K	./Stack.class
+4.0K	./InstrTokenizer.class
+160K	.
+160K	total
+[sipulaj@athena lab07]> exit
+
+Script done on Wed 30 Oct 2013 04:35:10 PM PDT
